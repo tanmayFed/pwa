@@ -41,6 +41,7 @@ export function useCreateTask() {
             columnId: newTask.columnId,
             position: newTask.position,
             rank: col.tasks.length,
+            createdAt: new Date().toISOString(),
           };
 
           return { ...col, tasks: [...col.tasks, freshUiTask] };

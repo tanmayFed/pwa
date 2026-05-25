@@ -39,17 +39,17 @@ async function fetchActiveBoard(): Promise<Board> {
         {
           id: "todo",
           title: "To Do",
-          tasks: offlineTasks.filter((t) => t.columnId === "todo"),
+          tasks: offlineTasks.filter((t: any) => t.columnId === "todo"),
         },
         {
           id: "in-progress",
           title: "In Progress",
-          tasks: offlineTasks.filter((t) => t.columnId === "in-progress"),
+          tasks: offlineTasks.filter((t: any) => t.columnId === "in-progress"),
         },
         {
           id: "done",
           title: "Done",
-          tasks: offlineTasks.filter((t) => t.columnId === "done"),
+          tasks: offlineTasks.filter((t: any) => t.columnId === "done"),
         },
       ],
     };
